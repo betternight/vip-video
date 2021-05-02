@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<div style="display: none;" id="rocket-to-top">
+    <div style="opacity:0;display: block;" class="level-2"></div>
+    <div class="level-3"></div>
+</div>
+<title>VIP视频解析站 乐视爱奇艺腾讯优酷vip视频在线解析网站</title>
+<link rel="icon" href="">
+<meta name="keywords" content="vip视频在线解析,优酷VIP解析,爱奇艺VIP解析,腾讯VIP解析,乐视VIP解析,芒果VIP解析,优酷视频解析网站">
+<meta name="description"
+      content="VIP视频解析站：提供优酷VIP解析，爱奇艺VIP解析，腾讯VIP解析，乐视VIP解析，芒果VIP解析等解析服务">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>VIP视频解析站 乐视爱奇艺腾讯优酷vip视频在线解析网站</title>
+
+<!-- Loading Bootstrap -->
+<link href="static/bootstrap.min.css" rel="stylesheet">
+
+<!-- Loading Flat UI -->
+<link href="static/flat-ui.css" rel="stylesheet">
+<link href="static/newcommons.css" rel="stylesheet" type="text/css">
+<link href="static/style.css" rel="stylesheet" type="text/css">
+<script src="static/jquery-1.7.1.min.js" type="text/javascript"></script>
+<div class="page">
+    <div class="head js-bg-ele">
+        <div class="content">
+            <a href="https://pj8.me/vip"><img src="static/aaa.png" title="VIP视频解析站" alt="VIP视频解析站" class="zslogo"></a>
+
+            <div class="navList">
+                <a href="https://pj8.me/" class="link cur" target="_blank"><span>LOL免费换肤（保持更新）</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="body js-bg-ele">
+        <div class="bg">
+            <div class="bg">
+            </div>
+            <div class="content">
+                <br>
+                <p>
+                    <!--   -->
+                </p>
+                <div class="containe">
+                    <input name="doplayers" type="button" id="doplayers1" class="btn btn-block btn-lg btn-success"
+                           value="会员视频地址（Ctrl+v粘贴网址）">
+                    <input name="url" id="url" type="text" class="form-control"
+                           value="https://www.iqiyi.com/v_9vmsxe8up4.html" style="
+    padding-top: 4px;
+">
+                    <input name="doplayers" type="button" id="doplayers" class="btn btn-block btn-lg btn-success"
+                           value="立即播放">
+                </div>
+                <br>
+                <p scrollamount="3" behavior="right"><font color="#FFFAFA">娱乐项目，大家喜欢就好。如无法观看请刷新。
+                </font></p><font color="#FFFAFA">
+                本站一切资源不代表本站立场，如果无意侵犯了您的合法权益，请联系我们，我们将及时处理。
+                <p></p>
+                <br>
+
+                <!--</div>-->
+                <div id="ckvip" style="position:relative;z-index:1000">
+                    <iframe border="0" id="vplay" name="vplay" src="" style="width: 1010px; height: 570px"
+                            allowfullscreen="" allowtransparency="" frameborder="0">
+                    </iframe>
+                </div>
+                <script type="text/javascript">
+                    var API_URL_LIST = [
+                        "https://660e.com/?url=",
+                        "https://jx.618g.com/?url=",
+                        "https://jx.xrmm.cn/yxjx/?url=",
+                        "https://pay.520yk.cn/256/?url="
+                    ]
+                    var API_URL = API_URL_LIST[Math.floor(Math.random() * API_URL_LIST.length)]
+                    alert(API_URL)
+                    players();
+                    $("#doplayers").bind("click", function () {
+                        players()
+                    });
+
+                    function players() {
+                        console.info("hello")
+                        var a = $('#url').val();
+                        console.info("hello" + a)
+                        if ($('#url').val() == "") {
+                            alert('请输入视频网站网址！');
+                            $('#url').focus();
+                            return (false)
+                        }
+                        document.getElementById("vplay").src = API_URL + a;
+
+                    }
+
+                    function players2() {
+                        var a = $('#url').val();
+                        if ($('#url').val() == "") {
+                            alert('请输入视频网站网址！');
+                            $('#url').focus();
+                            return (false)
+                        }
+                        var b = {
+                            f: API_URL + a,
+                            c: 0,
+                            s: 2,
+                            p: 1,
+                            b: 1,
+                        };
+                        var c = {
+                            bgcolor: '#FFF',
+                            allowFullScreen: true,
+                            allowScriptAccess: 'always',
+                            wmode: 'transparent'
+                        };
+                        var d = [API_URL + a + '&mobile'];
+                        var e = ['iPad', 'iPhone', 'ios', 'android+false', 'msie10+false'];
+                        CKobject.embed('player/player.swf', 'ckplays', 'ckplayer_mains', '100%', '500', false, b, d, c)
+                    }
+
+                    function addhtml52() {
+                        if (CKobject.isHTML5()) {
+                            support = ['all'];
+                            CKobject._K_('moveid').innerHTML = '';
+                            CKobject.embedHTML5('moveid', 'ckplayer_a1', '100%', 530, video, flashvars, support)
+                        } else {
+                            addflash()
+                        }
+                    }
+                </script>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p><font size="3px" color="#FFFFFF">点击下面视频图标,可进入会员视频地址 </font></p>
+
+                <div id="ckplays"></div>
+                <div class="logos_lists" style="margin-left:30px;">
+                    <dl>
+                        <a target="_blank" href="http://vip.iqiyi.com/"><img src="static/aqylogo.png" alt=""></a>
+                        <dd>爱奇艺视频</dd>
+                    </dl>
+                    <dl>
+                        <a target="_blank" href="http://film.qq.com/"><img src="static/qqlogo.png" alt=""></a>
+                        <dd>腾讯视频</dd>
+                    </dl>
+                    <dl>
+                        <a target="_blank" href="http://vip.youku.com/"><img src="static/youkulogo.png" alt=""></a>
+                        <dd>优酷视频</dd>
+                    </dl>
+                    <dl>
+                        <a target="_blank" href="http://vip.tudou.com/index.html"><img src="static/tudoulogo.png"
+                                                                                       alt=""></a>
+                        <dd>土豆视频</dd>
+                    </dl>
+                    <dl>
+                        <a target="_blank" href="http://www.56.com/"><img src="static/56logo.png" alt=""></a>
+                        <dd>56视频</dd>
+                    </dl>
+                    <dl>
+                        <a target="_blank" href="http://movie.ku6.com/"><img src="static/ku6logo.png" alt=""></a>
+                        <dd>酷6视频</dd>
+                    </dl>
+                    <dl>
+                        <a target="_blank" href="http://yuanxian.le.com/?ref=ym0101"><img src="static/letvlogo.png"
+                                                                                          alt=""></a>
+                        <dd>乐视TV视频</dd>
+                    </dl>
+                    <dl>
+                        <a target="_blank" href="http://www.fun.tv/"><img src="static/fxw.png" alt=""></a>
+                        <dd>风行网</dd>
+                    </dl>
+                    <dl>
+                        <a target="_blank" href="http://www.mgtv.com/vip/"><img src="static/hunantvlogo.png" alt=""></a>
+                        <dd>芒果TV视频</dd>
+                    </dl>
+                    <dl>
+                        <a target="_blank" href="http://tv.sohu.com/"><img src="static/sohulogo.png" alt=""></a>
+                        <dd>搜狐视频</dd>
+                    </dl>
+                    <dl>
+                        <a target="_blank" href="http://www.pptv.com/"><img src="static/pps.png" alt=""></a>
+                        <dd>PPTV</dd>
+                    </dl>
+                    <dl>
+                        <a target="_blank" href="http://www.kankan.com/"><img src="static/xckk.png" alt=""></a>
+                        <dd>响巢看看</dd>
+                    </dl>
+                    <dl>
+                        <a target="_blank" href="http://www.baofeng.com/"><img src="static/bfyy.png" alt=""></a>
+                        <dd>暴风影音</dd>
+                    </dl>
+                    <dl>
+                        <a target="_blank" href="http://www.1905.com/"><img src="static/m1905.png" alt=""></a>
+                        <dd>m1905电影网</dd>
+                    </dl>
+                    <dl>
+                        <a target="_blank" href="http://www.yinyuetai.com/"><img src="static/yinyuetailogo.png" alt=""></a>
+                        <dd>音悦台MV</dd>
+                    </dl>
+
+                </div>
+            </font></div>
+            <font color="#FFFAFA">
+                <br>
+                <br>
+
+                <div style=" width:960px; margin:0 auto; text-align:center; margin-top:200px">
+                    <span id="span_dt_dt"></span>
+                </div>
+                <span id="sitetime"></span>
+                <br>
+                <p><br>
+                </p>
+                本项目的所有接口均来自互联网以及网页提供，仅供学习交流使用，我们尊重任何视频版权, 请遵循相关法律法规。
+                <p></p>
+                本站一切资源不代表本站立场，如果无意侵犯了您的合法权益，请联系我们，我们将及时处理。
+                <p><br>
+                    <span class="copyright">Copyright © 2021 pj8 VIP视频解析站  powered <a href="https://pj8.me/"
+                                                                                      title=""
+                                                                                      target="_blank">pj8.me</a></span>
+                </p>
+                <p><br>
+                </p></font></div>
+    </div>
+</div>
+</body>
+</html>

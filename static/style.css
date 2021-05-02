@@ -1,0 +1,259 @@
+@font-face {
+    font-family: "tf";
+    src: url("/tfboys.360.cn/m/f/tf.eot");
+    src: url("/tfboys.360.cn/m/f/tf.eot?#qiwoo-font") format("embedded-opentype"), url("/tfboys.360.cn/m/f/tf.woff") format("woff"), url("/tfboys.360.cn/m/f/tf.ttf") format("truetype"), url("/tfboys.360.cn/m/f/tf.svg") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "\601d\6e90\9ed1\4f53\52a9\624b\7248";
+    font-style: normal;
+    font-weight: normal;
+    src: url('sycn.eot');
+    src: url('sycn.eot?#iefix') format('embedded-opentype'), url(sycn.ttf) format('truetype')
+}
+
+body {
+    font-family: 'Microsoft YaHei', '\5fae\8f6f\96c5\9ed1'
+}
+
+.head {
+    background: #006666;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    min-width: 1068px;
+    top: 0;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .1);
+    z-index: 1001
+}
+
+.head .bg-mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: .1;
+    filter: alpha(opacity=10);
+    -ms-filter: "alpha(opacity=10)"
+}
+
+.zslogo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 13px 0 0 35px
+}
+
+.head .navList {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.link {
+    padding: 0 15px;
+    display: block;
+    height: 60px;
+    float: left
+}
+
+.link span {
+    display: inline-block;
+    height: 60px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 60px
+}
+
+.link, .link:hover {
+    text-decoration: none
+}
+
+.link-app {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 36px;
+    position: relative;
+    text-align: center;
+    width: 102px
+}
+
+.link-app img, .link-app span {
+    vertical-align: middle;
+    margin-right: 5px
+}
+
+.link-app .icon-arrow {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 9px;
+    height: 5px;
+    background: url(img/tip.png) no-repeat;
+    margin-right: 0
+}
+
+.link-app:hover {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, .4);
+    height: 180px
+}
+
+.link-app .qrcode {
+    display: none
+}
+
+.link-app:hover .qrcode {
+    display: block
+}
+
+.link-app:hover .qrcode img {
+    margin-right: 0;
+    margin-top: 3px
+}
+
+.link-app:hover .icon-arrow {
+    background-position: 0 -5px
+}
+
+.head .content .cur span {
+    background: url() 0 0 repeat-x
+}
+
+.body {
+    margin-top: 60px;
+    background: #4ebebd;
+    position: relative
+}
+
+.body .bg {
+    padding-top: 448px
+}
+
+.bg_c {
+    height: 168px;
+    background: url(img/cover.png) center bottom no-repeat
+}
+
+.bg_f {
+    height: 200px;
+    background: #fff
+}
+
+.head, .body {
+    -ms-transition: background 1s linear;
+    -o-transition: background 1s linear;
+    -moz-transition: background 1s linear;
+    -webkit-transition: background 1s linear;
+    transition: background 1s linear
+}
+
+.content {
+    position: absolute;
+    width: 1068px;
+    left: 50%;
+    margin-left: -534px;
+    top: 0
+}
+
+.lisContainer {
+    position: absolute;
+    width: 381px;
+    height: 59px;
+    top: 449px;
+    left: 589px;
+    text-align: center;
+    padding-top: 22px
+}
+
+.li {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url() 0 0 no-repeat;
+    margin-right: 18px;
+    position: relative
+}
+
+.li-gray {
+    margin-right: 0
+}
+
+.li em {
+    width: 100%;
+    height: 100%;
+    background: url() 0 0 no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none
+}
+
+.lisContainer .cur em {
+    display: block
+}
+
+.li-green {
+    background-position: 0 0
+}
+
+.li-blue {
+    background-position: -33px 0
+}
+
+.li-pink {
+    background-position: -67px 0
+}
+
+.li-yellow {
+    background-position: -101px 0
+}
+
+.li-purple {
+    background-position: -134px 0
+}
+
+.li-red {
+    background-position: -168px 0
+}
+
+.li-gray {
+    background-position: -201px 0
+}
+
+
+.containe {
+    text-align: center;
+}
+
+#url {
+    width: 600px;
+    height: 50px;
+    border-color: #54C754;
+    display: inline-block;
+    margin: 0px;
+}
+
+#doplayers {
+    margin: 0px;
+    width: 150px;
+    height: 50px;
+    display: inline-block;
+
+}
+
+#doplayers1 {
+    margin: 0px;
+    width: 150px;
+    height: 50px;
+    display: inline-block;
+
+}
+
+.fromer {
+    text-align: center;
+    padding-top: 2px;
+
+}
